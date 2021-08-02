@@ -4,6 +4,7 @@
 
 ## Supported Games
 * [Mercs](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/main/Mercs)
+* [Streets of Rage 2 / Bare Knuckle II](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/main/Streets%20of%20Rage%202)
 * [Wonder Boy III: Monster Lair](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/main/Wonder%20Boy%20III%20-%20Monster%20Lair)
 
 *For more specific information check their individual directory*
