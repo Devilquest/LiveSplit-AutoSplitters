@@ -10,8 +10,17 @@
 ## Features
 * **Works for any region, difficulty and for both one and two player modes.**
 * **Auto Start:** Starts the timer when you can move your character at the start of Stage 1.
-* **Auto Split:** Split the timer at the end of every stage. The final split is done when the title: Stage 8 Clear appears. You can choose different split options. See the [Splits](#splits) section.
+* **Auto Split:** Split the timer at the end of every stage. The final split is done when the title: Stage 8 Clear appear. You can choose different split options. See the [Splits](#splits) section.
 * **Auto Reset:** Reset the timer when you reset the emulator.
+
+## Options
+* **Stage Splits:** Choose when the Stage Split is done. 
+	* **On Clear Title:** The split will be done when the "Stage X Clear" title appear.
+	*  **On Stage Transition:** The split will be done on the black screen after the score screen fades.
+
+	_NOTE: If both options are checked the split will be done "On Clear Title"._
+    
+* **Subsplits:** By default there are only 8 splits, one for each stage, but there are options to set splits for every time the screen change. See the [Splits](#splits) section.
 
 ## Splits
 **For the Auto Splitter to work properly there must be at least 8 one for each stage. By default, the split is done at the end of every stage. But there are some options to configure the split when the screen changes, for example when you defeat Jack and enter the Barbon’s Bar in Stage 1. Or even, there are options to made splits for every stage 4, stage 7 and stage 8 elevator's enemy waves. Each stage’s subsplit can be enabled individually. See the examples below:**

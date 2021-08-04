@@ -55,7 +55,14 @@ startup
     settings.Add("emulatorFusion", true, "Kega Fusion v3.64", "supportedEmulators");
     settings.Add("emulatorSEGAGenesisClassics", true, "SEGA Genesis Classics", "supportedEmulators");
     settings.Add("emulatorSEGAGameRoom", true, "SEGA Game Room", "supportedEmulators");
-	
+
+    //Stage Split options
+    settings.Add("stageSplits", true, "Stage Splits:");
+    settings.Add("stageSplitsTitle", false, "On Clear Title", "stageSplits");
+    settings.SetToolTip("stageSplitsTitle", "The stage split will be done when the title \"Stage X Clear\" appear.");
+    settings.Add("stageSplitsTransition", true, "On Stage Transition", "stageSplits");
+    settings.SetToolTip("stageSplitsTransition", "The stage split will be done on the black screen after the score screen fades.");
+
 	//Substages Splits
     settings.Add("subSplits", false, "Subsplits:");
     settings.Add("stage1", false, "Stage 1", "subSplits");
@@ -76,18 +83,81 @@ startup
 init
 {
     refreshRate = 10;
+
+    vars.currentLevel = 0x00;
 }
 
 start
 {
-    return current.stage == 0x00 && current.subStage == 0x00 && current.time > 0x00 && old.time > current.time;
+    if(current.stage == 0x00 && current.subStage == 0x00 && current.time > 0x00 && old.time > current.time)
+    {
+        vars.currentLevel = 0x00;
+        return true;
+    }
 }
 
 split
 {
     //Stage Split
-    if(old.stage < current.stage)
-        return true;
+    if (settings["stageSplitsTitle"])
+    {
+        //Stage Clear Title Split
+
+        //Stage 1 Split
+        if(vars.currentLevel == 0x00 && current.stage == 0x00 && current.subStage == 0x0C && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 2 Split
+        if(vars.currentLevel == 0x02 && current.stage == 0x02 && current.subStage == 0x0C && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 3 Split
+        if(vars.currentLevel == 0x04 && current.stage == 0x04 && current.subStage == 0x10 && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 4 Split
+        if(vars.currentLevel == 0x06 && current.stage == 0x06 && current.subStage == 0x16 && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 5 Split
+        if(vars.currentLevel == 0x08 && current.stage == 0x08 && current.subStage == 0x0A && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 6 Split
+        if(vars.currentLevel == 0x0A && current.stage == 0x0A && current.subStage == 0x0A && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }
+
+        //Stage 7 Split
+        if(vars.currentLevel == 0x0C && current.stage == 0x0C && current.subStage == 0x12 && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
+        {
+            vars.currentLevel += 0x02;
+            return true;
+        }    
+    }
+    else
+    {
+        //Stage Transition Split
+        if(old.stage < current.stage)
+            return true;
+    }
 
     //Final Split
     if(current.stage == 0x0E && current.subStage == 0x0A && current.bossStars == 0x00 && current.bossLife == 0x00 && old.end == 0x01 && current.end == 0x01)
