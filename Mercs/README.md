@@ -40,7 +40,7 @@ Optionally, you can use the `.lss` file found in this folder. There, all splits 
 
 In Mission 1, if you're full health and the timer is not running, it will sometimes start when you move or turn your character. In Original Mode, it will start if you resume the game after a pause. This is because the address `0xE031` goes to 0.
 
-*As mentioned earlier, this does NOT impact the timer during a speedrun, as the timer is already running.*
+*As mentioned earlier, this does NOT affect the timer during a speedrun, as the timer is already running.*
 
 <br>
 
