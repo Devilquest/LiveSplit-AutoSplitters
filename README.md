@@ -1,6 +1,6 @@
 # LiveSplit Auto Splitters
 
-**Set of [LiveSplit](https://github.com/LiveSplit/LiveSplit) [Auto Splitters](https://github.com/LiveSplit/LiveSplit.AutoSplitters) I wrote for various SEGA Mega Drive/Genesis games.**
+**Set of [LiveSplit](https://github.com/LiveSplit/LiveSplit) [Auto Splitters](https://github.com/LiveSplit/LiveSplit.AutoSplitters) for various SEGA Mega Drive/Genesis games.**
 
 ## Supported Games
 * [Mercs / Senjō no Ōkami II](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/master/Mercs)
