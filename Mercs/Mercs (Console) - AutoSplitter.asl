@@ -10,9 +10,9 @@ ________________________________________________________________________________
 |   - GitHub: https://github.com/Devilquest/LiveSplit-AutoSplitters                                 |
 |___________________________________________________________________________________________________|
 
-Known Issues: (Minor Issue) In Mission 1 if you're full health and the timer is not running it sometimes will start when moving/turning your character. In Original Mode it will start if you resume the game after a pause.
+Known Issues: (Minor Issue) In Mission 1, if you're full health and the timer is not running, it will sometimes start when you move or turn your character. In Original Mode, it will start if you resume the game after a pause.
               This is because the address 0xE031 goes to 0.
-              This does NOT affect the timer when you're doing a speedrun, because the timer is already running.
+              This does NOT affect the timer during a speedrun, as the timer is already running.
 */
 
 state("Fusion")
