@@ -1,6 +1,6 @@
 # LiveSplit Auto Splitters
 
-**Set of [LiveSplit](https://github.com/LiveSplit/LiveSplit) [Auto Splitters](https://github.com/LiveSplit/LiveSplit.AutoSplitters) for various SEGA Mega Drive/Genesis games.**
+**A collection of [LiveSplit](https://github.com/LiveSplit/LiveSplit) [Auto Splitters](https://github.com/LiveSplit/LiveSplit.AutoSplitters) for various SEGA Mega Drive/Genesis games.**
 
 ## Supported Games
 * [Mercs / Senjō no Ōkami II](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/master/Mercs)
@@ -8,15 +8,15 @@
 * [Streets of Rage 2 / Bare Knuckle II](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/master/Streets%20of%20Rage%202)
 * [Wonder Boy III: Monster Lair](https://github.com/Devilquest/LiveSplit-AutoSplitters/tree/master/Wonder%20Boy%20III%20-%20Monster%20Lair)
 
-*For more specific information check their individual directory*
+*For more specific information, please refer to their respective directories.*
 
 ## Manual Installation
 * Download the desired `.asl` file.
-* Open [LiveSplit](https://github.com/LiveSplit/LiveSplit) and right click it.
-* Select `Edit Layout...` a Layout Editor window will appear.
-* Click on the `+` icon, choose `Control` and select the `Scriptable Auto Splitter` option.
-* Double click on the new added option.
-* In the first section `Script Path` browse and select the downloaded `.asl` file.
+* Open [LiveSplit](https://github.com/LiveSplit/LiveSplit) and right-click on it.
+* Select `Edit Layout...`, and a Layout Editor window will appear.
+* Click on the `+` icon, choose `Control`, and then select the `Scriptable Auto Splitter` option.
+* Double-click on the newly added option.
+* In the first section, `Script Path`, browse and select the downloaded `.asl` file.
 
 <br>
 
