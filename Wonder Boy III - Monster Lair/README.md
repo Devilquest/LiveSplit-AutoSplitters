@@ -8,9 +8,9 @@
 * SEGA Game Room
 
 ## Features
-* **Auto Start:** Starts the timer when you press Start on the "One or Two Player" select screen.
-* **Auto Split:** Split the timer on the black screen between levels. Except in the last level, where the timer is split when you touch the armour after beating the final boss.
-* **Auto Reset:** Reset the timer when you reset the emulator.
+* **Auto Start:** Initiates the timer when you press "Start" on the "One or Two Player" selection screen.
+* **Auto Split:** Automatically splits the timer during the black screen transitions between levels. However, in the final level, the timer splits when you touch the armor after defeating the final boss.
+* **Auto Reset:** Resets the timer when you reset the emulator.
 
 ## Splits
 **For the Auto Splitter to work properly, there must be 9 splits, one for each level.**
