@@ -9,7 +9,7 @@ ________________________________________________________________________________
 |                                                                                                       |
 | Made by Devilquest:                                                                                   |
 |   - Twitch: https://www.twitch.tv/devilquest                                                          |
-|   - GitHub: https://github.com/Devilquest/LiveSplit-Auto-Splitters                                    |
+|   - GitHub: https://github.com/Devilquest/LiveSplit-AutoSplitters                                     |
 |_______________________________________________________________________________________________________|
 
 */
