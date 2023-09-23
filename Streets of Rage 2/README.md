@@ -8,20 +8,20 @@
 * SEGA Game Room
 
 ## Features
-* **Works for any region, difficulty and for both one and two player modes.**
-* **Auto Start:** Starts the timer when you can move your character at the start of Stage 1.
-* **Auto Split:** Split the timer at the end of every stage. The final split is done when the title: Stage 8 Clear appear. You can choose different split options. See the [Splits](#splits) section.
+* **Compatible with all regions, difficulties, and both one and two-player modes.**
+* **Auto Start:** Initiates the timer when you gain control of your character at the beginning of Stage 1.
+* **Auto Split:** Split the timer at the end of each stage. The final split is done when the title: Stage 8 Clear appear. Various split options are available. Refer to the [Splits](#splits) section for details.
 * **Auto Reset:** Reset the timer when you reset the emulator.
 
 ## Options
-* **Split On: Clear Title - Stage Transition:** Choose when the Stage Split is done.
-	* **Checked:** The stage split will be performed when the title \"Stage X Clear\" appear. 
-	* **Unchecked:** The stage split will be performed on the black screen after the score screen fades.
+* **Split On: Clear Title - Stage Transition:** Choose when the Stage Split is triggered.
+	* **Checked:** The stage split is triggered when the title "Stage X Clear" appears. 
+	* **Unchecked:** The stage split is triggered on the black screen after the score screen fades.
 	
-* **Subsplits:** By default there are only 8 splits, one for each stage, but there are options to set splits for every time the screen change. See the [Splits](#splits) section.
+* **Subsplits:** By default there are only 8 splits, one for each stage. However, there are options to set splits for every screen transition. See the [Splits](#splits) section for details.
 
 ## Splits
-For the Auto Splitter to work properly there must be at least 8 one for each stage. By default, the split is done at the end of every stage. But there are some options to configure the split when the screen changes, for example when you defeat Jack and enter the Barbon’s Bar in Stage 1. Or even, there are options to made splits for every stage 4, stage 7 and stage 8 elevators enemy waves. Each stage’s subsplit can be enabled individually. See the examples below:
+For the Auto Splitter to work properly, you must have at least 8 splits, one for each stage. By default, the split occurs at the end of each stage. Nevertheless, you have the option to configure the split to trigger when the screen changes, such as when you defeat Jack and enter Barbon’s Bar in Stage 1. Additionally, there are options to create splits for the elevator waves in stages 4, 7, and 8. Each stage's subsplits can be enabled individually. Examples are provided below:
 
 **Example for default 8 splits:**
 * Stage 1
@@ -32,7 +32,6 @@ For the Auto Splitter to work properly there must be at least 8 one for each sta
 * Stage 6
 * Stage 7
 * Stage 8
-
 
 **Example for stage subsplits:**
 * The Streets
@@ -66,7 +65,6 @@ For the Auto Splitter to work properly there must be at least 8 one for each sta
 * Bear Jr.
 * Elevator
 * Mr. X
-
 
 **Example for stage subsplits + elevator's enemy waves:**
 * The Streets
@@ -116,10 +114,10 @@ Optionally, you can use the `.lss` files found in this folder. There, all splits
 ## Changelog
 - **21/01/2023**
   - RefreshRate increased from 10 to 20.
-  - The timer shouldn't start when the game enters demo mode.
-  - Simplified the "Split On" option to make it more clear. Now there's only one checkbox (unchecked by default):
-	- Checked: The stage split will be done when the title \"Stage X Clear\" appear.
-  	- Unchecked: The stage split will be done on the black screen after the score screen fades.
+  - The timer should no longer start when the game enters demo mode.
+  - Simplified the "Split On" option for clarity. There is now only one checkbox (unchecked by default):
+	- Checked: The stage split will occur when the title "Stage X Clear" appears.
+  	- Unchecked: The stage split will occur on the black screen after the score screen fades.
 	
 <br>
 
